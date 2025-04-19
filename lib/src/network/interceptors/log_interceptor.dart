@@ -3,7 +3,7 @@ import 'package:logging/logging.dart';
 
 /// A Dio interceptor that emits to the Dart `Logger`
 /// so that whatever handlers attached via `LoggerClient` will run.
-class LoggingInterceptor extends Interceptor {
+class LogInterceptor extends Interceptor {
   final _log = Logger('ApiClient');
 
   @override

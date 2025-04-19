@@ -5,8 +5,17 @@ import 'package:dio/dio.dart';
 class ApiClient {
   /// Construct an ApiClient with the given [baseUrl].
   /// You can pass additional [options] to customize Dio.
-  ApiClient({required String baseUrl, BaseOptions? options})
-    : _dio = Dio(options ?? BaseOptions(baseUrl: baseUrl));
+  ApiClient({
+    required String baseUrl,
+    BaseOptions? options,
+    List<Interceptor>? interceptors,
+  }) : _dio = Dio(options ?? BaseOptions(baseUrl: baseUrl)) {
+    // Attach interceptors, including our logging interceptor
+    _dio.interceptors.addAll([
+      LogInterceptor(),
+      if (interceptors != null) ...interceptors,
+    ]);
+  }
   final Dio _dio;
 
   /// Performs a GET request to [path] with optional [queryParameters].
