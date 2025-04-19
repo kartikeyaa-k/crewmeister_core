@@ -23,9 +23,9 @@ class ApiClient {
     String path, {
     Map<String, dynamic>? queryParameters,
     Options? options,
-  }) {
+  }) async {
     try {
-      return _dio.get<T>(
+      return await _dio.get<T>(
         path,
         queryParameters: queryParameters,
         options: options,
@@ -41,9 +41,9 @@ class ApiClient {
     Map<String, dynamic>? data,
     Map<String, dynamic>? queryParameters,
     Options? options,
-  }) {
+  }) async {
     try {
-      return _dio.post<T>(
+      return await _dio.post<T>(
         path,
         data: data,
         queryParameters: queryParameters,
@@ -60,9 +60,9 @@ class ApiClient {
     Map<String, dynamic>? data,
     Map<String, dynamic>? queryParameters,
     Options? options,
-  }) {
+  }) async {
     try {
-      return _dio.put<T>(
+      return await _dio.put<T>(
         path,
         data: data,
         queryParameters: queryParameters,
@@ -79,9 +79,9 @@ class ApiClient {
     Map<String, dynamic>? data,
     Map<String, dynamic>? queryParameters,
     Options? options,
-  }) {
+  }) async {
     try {
-      return _dio.delete<T>(
+      return await _dio.delete<T>(
         path,
         data: data,
         queryParameters: queryParameters,
