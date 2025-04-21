@@ -6,11 +6,19 @@ ThemeData get appLightTheme => ThemeData(
   brightness: Brightness.light,
   primaryColor: const Color.fromRGBO(255, 148, 25, 0.85),
   colorScheme: const ColorScheme.light(
-    primary: Color.fromRGBO(255, 148, 25, 0.85),
-    secondary: Color(0xFFFFD180), // soft amber
-    error: Color(0xFFD32F2F), // deep red
-    shadow: Color(0x33000000),
-    onSurface: Color(0xFF444444),
+    primary: Color(0xFFFF9419),
+    secondary: Color(0xFFFFD180),
+    error: Color(0xFFD32F2F),
+    onError: Color.fromARGB(255, 231, 206, 204),
+
+    secondaryContainer: Color(0xFFE6F4EA),
+    onSecondaryContainer: Color(0xFF2E7D32),
+
+    tertiaryContainer: Color(0xFFFFF8E1),
+    onTertiaryContainer: Color(0xFFEF6C00),
+
+    errorContainer: Color(0xFFFFEBEE),
+    onErrorContainer: Color(0xFFD32F2F),
   ),
   scaffoldBackgroundColor: const Color(0xFFFDFBF9),
   appBarTheme: AppBarTheme(

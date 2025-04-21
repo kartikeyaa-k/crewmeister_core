@@ -9,12 +9,20 @@ ThemeData get appDarkTheme => ThemeData(
   primaryColor: Colors.orange,
   scaffoldBackgroundColor: const Color(0xFF121212),
   colorScheme: const ColorScheme.dark(
-    primary: Colors.orange,
-    secondary: Color(0xFFFFB74D), // lighter orange for accents
-    error: Color(0xFFEF5350),
-    onError: Colors.white,
-    surface: Color(0xFF1E1E1E),
-    onSurface: Color(0xFFE0E0E0),
+    primary: Color(0xFFFF9419),
+    secondary: Color(0xFFFFD180),
+    error: Color(0xFFF44336),
+    onError: Color.fromARGB(255, 231, 206, 204),
+
+    // Status badge colors
+    secondaryContainer: Color(0xFF2E7D32),
+    onSecondaryContainer: Color(0xFFE6F4EA),
+
+    tertiaryContainer: Color(0xFFEF6C00),
+    onTertiaryContainer: Color(0xFFFFF3E0),
+
+    errorContainer: Color(0xFFD32F2F),
+    onErrorContainer: Color(0xFFFFEBEE),
   ),
   appBarTheme: AppBarTheme(
     backgroundColor: const Color(0xFF1F1F1F),
