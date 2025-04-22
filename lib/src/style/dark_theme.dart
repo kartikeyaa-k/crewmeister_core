@@ -1,16 +1,15 @@
-// ignore_for_file: deprecated_member_use
-
+import 'package:crewmeister_core/src/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 ThemeData get appDarkTheme => ThemeData(
   useMaterial3: true,
   brightness: Brightness.dark,
-  primaryColor: Colors.orange,
+  primaryColor: primaryColor,
   scaffoldBackgroundColor: const Color(0xFF121212),
   colorScheme: const ColorScheme.dark(
-    primary: Color(0xFFFF9419),
-    secondary: Color(0xFFFFD180),
+    primary: primaryColor,
+    secondary: secondaryColor,
     error: Color(0xFFF44336),
     onError: Color.fromARGB(255, 231, 206, 204),
 
@@ -18,7 +17,7 @@ ThemeData get appDarkTheme => ThemeData(
     secondaryContainer: Color(0xFF2E7D32),
     onSecondaryContainer: Color(0xFFE6F4EA),
 
-    tertiaryContainer: Color(0xFFEF6C00),
+    tertiaryContainer: primaryColor,
     onTertiaryContainer: Color(0xFFFFF3E0),
 
     errorContainer: Color(0xFFD32F2F),
@@ -113,23 +112,23 @@ ThemeData get appDarkTheme => ThemeData(
   ),
   inputDecorationTheme: InputDecorationTheme(
     filled: true,
-    fillColor: Colors.white.withOpacity(0.05),
+    fillColor: Colors.white38,
     labelStyle: GoogleFonts.poppins(
       fontSize: 12,
       fontWeight: FontWeight.w300,
-      color: Colors.white.withOpacity(0.8),
+      color: Colors.white70,
     ),
     border: OutlineInputBorder(
       borderRadius: BorderRadius.circular(10),
-      borderSide: BorderSide(color: Colors.white.withOpacity(0.5)),
+      borderSide: const BorderSide(color: Colors.grey),
     ),
     enabledBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(10),
-      borderSide: BorderSide(color: Colors.white.withOpacity(0.3)),
+      borderSide: const BorderSide(color: Colors.white70),
     ),
     focusedBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(10),
-      borderSide: const BorderSide(color: Colors.orange),
+      borderSide: const BorderSide(color: primaryColor),
     ),
     errorBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(10),
@@ -139,7 +138,7 @@ ThemeData get appDarkTheme => ThemeData(
   ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
-      backgroundColor: Colors.orange,
+      backgroundColor: primaryColor,
       foregroundColor: Colors.black,
       padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 24.0),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
@@ -148,7 +147,7 @@ ThemeData get appDarkTheme => ThemeData(
   ),
   textButtonTheme: TextButtonThemeData(
     style: TextButton.styleFrom(
-      foregroundColor: Colors.orange,
+      foregroundColor: primaryColor,
       textStyle: GoogleFonts.poppins(fontSize: 14, fontWeight: FontWeight.w500),
     ),
   ),
