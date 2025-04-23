@@ -7,6 +7,7 @@ ThemeData get appDarkTheme => ThemeData(
   brightness: Brightness.dark,
   primaryColor: primaryColor,
   scaffoldBackgroundColor: const Color(0xFF121212),
+  cardColor: const Color.fromRGBO(255, 209, 128, 0.2),
   colorScheme: const ColorScheme.dark(
     primary: primaryColor,
     secondary: secondaryColor,

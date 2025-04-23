@@ -20,6 +20,7 @@ ThemeData get appLightTheme => ThemeData(
     surfaceDim: Colors.grey,
   ),
   scaffoldBackgroundColor: const Color(0xFFFDFBF9),
+  cardColor: const Color.fromRGBO(255, 209, 128, 0.2),
   appBarTheme: AppBarTheme(
     backgroundColor: primaryColor,
     elevation: 16,
