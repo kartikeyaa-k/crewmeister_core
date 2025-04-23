@@ -2,7 +2,6 @@
 
 `crewmeister_core` is a foundational Flutter package that powers all Crewmeister feature modules. It offers reusable utilities, consistent theming, standardized error handling, and a robust networking layer to keep your apps clean, testable, and scalable.
 
----
 
 ## 📦 Features
 
@@ -21,7 +20,6 @@
 - 🧪 **Testing**
   - Unit tests included for components, logging, and network modules
 
----
 
 ## 🧠 Built with Dependency Inversion Principle
 
@@ -32,7 +30,6 @@ You can swap Dio with another HTTP client (like http, Chopper, or custom solutio
 The rest of your app doesn't break because the interface and behavior remain consistent.
 It becomes easy to mock for unit testing and easier to maintain over time.
 
----
 
 ## 💡 Philosophy
 
@@ -46,7 +43,6 @@ It becomes easy to mock for unit testing and easier to maintain over time.
 
 - Clean project: Zero analysis issues
 
----
 
 ## 🗂 Folder Structure
 
@@ -66,7 +62,6 @@ test/
 └── crewmeister_core_test.dart   # Entrypoint test
 ```
 
----
 
 ## 🔌 Installation & Usage
 
