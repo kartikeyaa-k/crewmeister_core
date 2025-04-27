@@ -1,5 +1,4 @@
 import 'package:crewmeister_core/crewmeister_core.dart';
-import 'package:crewmeister_core/src/network/exceptions/api_exception.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
